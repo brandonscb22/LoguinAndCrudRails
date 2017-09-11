@@ -1,2 +1,0 @@
-class KardexMo < ApplicationRecord
-end

@@ -1,0 +1,1 @@
+DEPRECATION WARNING: alias_method_chain is deprecated. Please, use Module#prepend instead. From module, you can access the original method using super. (called from <top (required)> at /home/desarrollo/Documents/github/LoguinAndCrudRails/config/environment.rb:5)
