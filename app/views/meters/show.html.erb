@@ -1,0 +1,24 @@
+
+      <h1>
+        Unidad de Negocio
+        <small>Ver</small>
+      </h1>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <!-- Small boxes (Stat box) -->
+      <div class="row">
+        <div class="col-lg-12 col-xs-12">
+            <p>
+                <strong>Unidad de medida</strong>
+                <%= @meter.unity %>
+            </p>
+            <p>
+                <strong>tipo de medida:</strong>
+                <%= @meter.type_unity %>
+            </p>
+            
+            <%= link_to 'Back', meters_path %>
+        </div>
+      </div>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <%= favicon_link_tag 'icon.ico' %>
+  <title>RUSS</title>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="header col-xs-12" style="background-image: url(<%= image_url("header.svg") %>)">
+      <div class="row">
+        <div class="col-xs-4 col-md-3 text-center name_app">
+          <div id="button_menu" onclick="OpenCloseMenu()"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></div>
+          <div> <%= image_tag "logo_2.png" , class: "logo2" %> </div>
+        </div>
+        <div class="col-xs-4 col-md-6 text-center name_app">
+          <a href="/home">
+            <%= image_tag "logo.png" , class: "logo" %>
+          </a>
+        </div>
+        <div class="col-xs-4 col-md-3 text-center">
+          <div class="button_log_out text-right">
+            <!--<%= link_to ('<i class="glyphicon glyphicon-user"></i>').html_safe %>-->
+            <%= link_to ('<i class="glyphicon glyphicon-log-out"></i>').html_safe, 'logout', data: { confirm: 'Esta seguro?' } %>
+            <!--<%= link_to ('<i class="glyphicon glyphicon-bell"></i>').html_safe %>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="space-header col-xs-12">
+      <div class="row">
+        <div class="col-md-2 text-center name_app">
+          <h3>RUSS</h3>
+        </div>
+        <div class="col-md-2">
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div id="sub_menu" class="col-md-2">
+      <div class="row">
+        <div class="menu col-md-11">
+          <ul class="nav nav-pills nav-stacked">
+
+            <li><%= link_to ('<i class="glyphicon glyphicon-hourglass"></i> <span>Medidas</span>').html_safe, controller: 'meters' %></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <p></p>
+    </div>
+    <div class="col-md-8">
+      <div class="content row">
+        <div class="col-md-12">
+          <div class="alert alert-success alertSuccess" role="alert" style="display: none;"></div>
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

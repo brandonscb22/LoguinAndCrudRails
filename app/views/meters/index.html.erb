@@ -1,0 +1,28 @@
+<h1>
+  Medidas
+  <%= link_to ('<i class="glyphicon glyphicon-plus"></i>').html_safe, new_meter_path, remote: true,:class => "btn btn-primary button-white-new" %>
+</h1>
+<!-- Small boxes (Stat box) -->
+<div class="row">
+  <div class="col-xs-12">
+    <table  class="table table-bordered text-center">
+      <thead>
+        <tr>
+          <th>Unidad de Medida</th>
+          <th>Tipo de Medida</th>
+          <th>Opciones</th>
+        </tr>
+      </thead>
+      <% @meters.each do |g| %>
+        <tr>
+          <td><%= g.unity %></td>
+          <td><%= g.type_unity %></td>
+          <td>
+            <%= link_to ('<i class="glyphicon glyphicon-pencil"></i>').html_safe, edit_meter_path(g),remote: true %>
+            <%= link_to ('<i class="glyphicon glyphicon-remove"></i>').html_safe, meter_path(g), method: :delete,data: { confirm: 'Esta seguro?' } %>
+          </td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+</div>

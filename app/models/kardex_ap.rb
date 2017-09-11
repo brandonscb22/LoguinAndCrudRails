@@ -1,0 +1,2 @@
+class KardexAp < ApplicationRecord
+end

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: false
+  registration_date: 2016-09-12
+  provider: one
+  subresource: one
+  quantity: 9.99
+  total_value: 9.99
+  meter: one
+
+two:
+  type: false
+  registration_date: 2016-09-12
+  provider: two
+  subresource: two
+  quantity: 9.99
+  total_value: 9.99
+  meter: two

@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col-xs-6 col-md-4 row_home">
+    <%= link_to ('<div class="col-md-10 col-md-offset-1 block_home"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span><br>UNIDADES DE NEGOCIO</div>').html_safe, controller: 'business_units' %>
+  </div>
+  <div class="col-xs-6 col-md-4 row_home">
+    <%= link_to ('<div class="col-md-10 col-md-offset-1 block_home"><span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span><br>ORDENES DE PROCEDIMIENTO</div>').html_safe, controller: 'production_orders' %>
+  </div>
+  <div class="col-xs-6 col-md-4 row_home">
+    <%= link_to ('<div class="col-md-10 col-md-offset-1 block_home"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span><br>UNIDADES DE GESTION</div>').html_safe, controller: 'management_units' %></li>
+  </div>
+  <div class="col-xs-6 col-md-4 row_home">
+    <%= link_to ('<div class="col-md-10 col-md-offset-1 block_home"><span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span><br>PRODUCTOS</div>').html_safe, controller: 'macroproducts' %>
+  </div>
+  <div class="col-xs-6 col-md-4 row_home">
+    <%= link_to ('<div class="col-md-10 col-md-offset-1 block_home"><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span><br>RECURSOS</div>').html_safe, controller: 'resources' %></li>
+  </div>
+  <div class="col-xs-6 col-md-4 row_home">
+    <%= link_to ('<div class="col-md-10 col-md-offset-1 block_home"><span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span><br>MEDIDAS</div>').html_safe, controller: 'meters' %>
+  </div>
+  <!--<div class="col-xs-6 col-md-4 row_home">
+    <%= link_to ('<div class="col-md-10 col-md-offset-1 block_home"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span><br>Gestion De Materiales</div>').html_safe, kardexes_path %>
+  </div>
+  <div class="col-xs-6 col-md-4 row_home">
+    <div class="col-md-10 col-md-offset-1 block_home">
+      <span class="glyphicon glyphicon-stats" aria-hidden="true"></span><br>
+      Reportes
+    </div>
+  </div>
+  <div class="col-xs-6 col-md-4 row_home">
+    <%= link_to ('<div class="col-md-10 col-md-offset-1 block_home"><span class="glyphicon glyphicon-resize-small" aria-hidden="true"></span><br>Actividades De Apoyo</div>').html_safe, indirect_activities_path %>
+  </div>-->
+  <div class="col-xs-6 col-md-4 row_home">
+    <%= link_to ('<div class="col-md-10 col-md-offset-1 block_home"><span class="glyphicon glyphicon-magnet" aria-hidden="true"></span><br>ENLACE ACTIVIDADES DE APOYO</div>').html_safe, new_indirect_activity_by_product_path %>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  quantity: 1
+  meter: one
+  resource: one
+  subresource: one
+
+two:
+  quantity: 1
+  meter: two
+  resource: two
+  subresource: two

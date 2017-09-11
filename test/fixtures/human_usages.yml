@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  registration_date: 2016-09-16
+  subresource: one
+  quantity: 9.99
+  meter: one
+
+two:
+  registration_date: 2016-09-16
+  subresource: two
+  quantity: 9.99
+  meter: two

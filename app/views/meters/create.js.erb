@@ -1,0 +1,5 @@
+<% if @meter.errors.empty? %>
+$('#product-modal').modal('hide');
+<% else %>
+alert('<%= @meter.errors.full_messages[0] %>');
+<% end %>

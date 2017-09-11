@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  quantity: 9.99
+  status_month: false
+  day_of_entry: 2016-12-27
+  generator: one
+
+two:
+  quantity: 9.99
+  status_month: false
+  day_of_entry: 2016-12-27
+  generator: two

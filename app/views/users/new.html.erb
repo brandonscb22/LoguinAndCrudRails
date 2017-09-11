@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <%= favicon_link_tag 'icon.ico' %>
+  <title>RUSS</title>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+
+</head>
+<body>
+<% @page_title = "UserAuth | Signup" %>
+<div class="col-md-4 col-md-offset-4">
+  <div class="content row">
+    <div class="col-md-12 text-center">
+      <div class="alert alert-success alertSuccess" role="alert" style="display: none;"></div>
+      <div class="Sign_Form">
+        <h1>Sign Up</h1>
+        <%= form_for @user do |f| %>
+            <p> Username:</br> <%= f.text_field :username%> </p>
+            <p> Email:</br> <%= f.text_field :email%> </p>
+            <p> Password:</br> <%= f.password_field :password%></p>
+            <p> Password Confirmation:</br> <%= f.password_field :password_confirmation%> </p>
+            <%= f.submit :Signup %>
+        <% end %>
+        <% if @user.errors.any? %>
+            <ul class="Signup_Errors">
+              <% for message_error in @user.errors.full_messages %>
+                  <li>* <%= message_error %></li>
+              <% end %>
+            </ul>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

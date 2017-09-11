@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  time_init: 2016-11-01 08:33:25
+  time_end: 2016-11-01 08:33:25
+  user: one
+
+two:
+  time_init: 2016-11-01 08:33:25
+  time_end: 2016-11-01 08:33:25
+  user: two
